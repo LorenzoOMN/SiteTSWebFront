@@ -57,9 +57,13 @@ export default function App() {
             type="number"
           />
         </div>
-        <button onClick={handleActivatorIn}>Adicionar</button>
-        <button onClick={handleActivatorOut}>Limpar</button>
-        <button onClick={handleActivatorMid}>Excluir Ultimo</button>
+        <div className="botoes">
+          <button id="add" onClick={handleActivatorIn}>Adicionar</button>
+          <div className="exclusao">
+            <button onClick={handleActivatorOut}>Limpar</button>
+            <button onClick={handleActivatorMid}>Excluir Ultimo</button>
+          </div>
+        </div>
 
         <div className="pessoas">
           <h2>Pessoas Cadastradas</h2>
